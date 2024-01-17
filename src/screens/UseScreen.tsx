@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { View, Text } from "react-native";
 
-const UserScreen = ({ route }: any) => {
+const UserScreen = () => {
   useEffect(() => {
     console.log("User Mount");
     return () => {
@@ -11,9 +11,6 @@ const UserScreen = ({ route }: any) => {
   return (
     <View>
       <Text>User Screen</Text>
-      <Text>userId: {route.params.userId}</Text>
-      <Text>userId: {route.params.userName}</Text>
-      <Text>userId: {route.params.userAge}</Text>
     </View>
   );
 };
